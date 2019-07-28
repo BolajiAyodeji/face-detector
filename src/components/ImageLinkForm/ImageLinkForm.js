@@ -4,8 +4,8 @@ import './ImageLinkForm.css'
 const ImageLinkForm = () => {
     return (
         <section>
-            <p className="f3 white">
-                {'This App will detect faces in your pictures!!'}
+            <p className="f4 white">
+                {'Enter the image URL below.'}
             </p>
             <div className="center">
                 <div className="center form pa4 br3 shadow-5">
