@@ -9,7 +9,7 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition'
 import './App.css';
 
 const app = new Clarifai.App({
- apiKey: '2b9d1cd1394c49199d54d87bffc05a2e'
+ apiKey: "713b791fc082439eb45c8b4e7083e151"
 });
 
 const particlesParams = {
@@ -39,8 +39,8 @@ class App extends Component {
     console.log('click');
 
     app.models.predict(
-      "2b9d1cd1394c49199d54d87bffc05a2e",
-      "https://www.bolajiayodeji.com/portfolio/images/bolaji.jpg")
+      Clarifai.GENERAL_MODEL,
+      "https://samples.clarifai.com/face-det.jpg")
       .then(
         function(response) {
           console.log(response)
