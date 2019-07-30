@@ -1,10 +1,12 @@
 import React from 'react'
 
-const FaceRecognition = () => {
+const FaceRecognition = ({ imageUrl }) => {
     return (
-        <nav style={{display:'flex', justifyContent:'flex-end'}}>
-            <p className="f3 link dim white underline pa3 pointer">Sign Out</p>
-        </nav>
+        <section className="center ma">
+            <div className="absolute mt2">
+                <img src={imageUrl} alt="recognition face" width="500px" height="auto" />
+            </div>
+        </section>
     )
 }
 
