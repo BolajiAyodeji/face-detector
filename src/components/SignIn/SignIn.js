@@ -1,10 +1,10 @@
 import React from 'react'
 import './SignIn.css'
 
-const SignIn = () => {
+const SignIn = ({ onRouteChange }) => {
     return (
-      <article className="br3 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
-      <main className="pa4 black-80">
+      <article className="br3 ba dark-gray b--white-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
+      <main className="pa4 white-80">
       <form className="measure">
         <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
           <legend className="f1 fw6 ph0 mh0">Sign In</legend>
@@ -18,7 +18,12 @@ const SignIn = () => {
           </div>
         </fieldset>
         <div className="">
-          <input className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Sign in" />
+          <input
+            onClick={() => onRouteChange('home')}
+            className="b ph3 pv2 input-reset ba white b--black bg-transparent grow pointer f6 dib"
+            type="submit"
+            value="Sign in"
+          />
         </div>
         <div className="lh-copy mt3">
           <a href="#0" className="f6 link dim black db">Register</a>
