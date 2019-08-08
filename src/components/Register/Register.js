@@ -25,7 +25,7 @@ const Register = ({ onRouteChange }) => {
             onClick={() => onRouteChange('home')}
             className="b ph3 pv2 input-reset ba white b--black bg-transparent grow pointer f6 dib"
             type="submit"
-            value="Sign in"
+            value="Sign up"
           />
         </div>
       </form>
