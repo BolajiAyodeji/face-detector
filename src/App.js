@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
-import dotenv from 'dotenv'
 import Particles from 'react-particles-js'
 import Clarifai from 'clarifai'
 import Navigation from './components/Navigation/Navigation'
+import SignIn from './components/SignIn/SignIn'
 import Logo from './components/Logo/Logo'
 import Rank from './components/Rank/Rank'
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm'
 import FaceRecognition from './components/FaceRecognition/FaceRecognition'
 import './App.css';
-
-dotenv.config()
 
 const app = new Clarifai.App({
  apiKey: `${process.env.REACT_APP_API_KEY}`
@@ -74,6 +72,7 @@ class App extends Component {
        params={{particlesParams}}
       />
      <Navigation />
+     <SignIn />
      <Logo />
      <Rank />
      <ImageLinkForm
