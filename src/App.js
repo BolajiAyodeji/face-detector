@@ -80,7 +80,19 @@ class App extends Component {
     app.models.predict(
       Clarifai.FACE_DETECT_MODEL,
       this.state.input)
-      .then(response => this.displayFaceBox(this.calculateFaceLocation(response)))
+      .then(response => {
+        if (response) {
+          fetch('http://localhost:3100/image', {
+            method: 'put',
+            headers: {'content-Type': 'application/json'},
+            body: JSON.stringify({
+              email: this.state.signInEmail,
+              password: this.state.signInPassword
+            })
+          })
+        }
+        this.displayFaceBox(this.calculateFaceLocation(response))
+      })
       .catch(err => console.log(err))
       };
 
