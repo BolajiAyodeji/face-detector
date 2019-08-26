@@ -1,6 +1,9 @@
 {
   "name": "face-detector",
   "version": "0.1.0",
+  "engines": {
+    "node": "10.16.0"
+  },
   "private": true,
   "dependencies": {
     "clarifai": "^2.9.0",
