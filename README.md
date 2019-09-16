@@ -1,4 +1,4 @@
-# face-detector-api
+# face-detector
 
 A PERN stack face detector app
 
