@@ -1,3 +1,5 @@
+# face-detector-api
+
 A PERN stack face detector app
 
 [FaceDetector API repository](https://github.com/BolajiAyodeji/face-detector-api)
