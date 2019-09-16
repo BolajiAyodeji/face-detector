@@ -1,7 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A PERN stack face detector app
 
 [FaceDetector API repository](https://github.com/BolajiAyodeji/face-detector-api)
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
 
 In the project directory, you can run:
